@@ -1,0 +1,114 @@
+.top
+{
+  width: 100%;
+  height: 70*@dw;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  .topbar
+  {
+    width: 100%;
+    height: 70*@dw;
+    background:@maincolor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .topbar-icon
+    {
+      width: 100%;
+      height: 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1
+      {
+        width: 32%;
+        height: 90%;
+        margin-left: 20*@dw;
+        #q2
+        {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      #q3
+      {
+        width:45*@dw;
+        height: 45*@dw;
+        border-radius: 50%;
+        border: solid 1px white;
+        margin-right: 15*@dw;
+      }
+    }
+  }
+}
+.nav
+{
+  width: 100%;
+  height: 70*@dw;
+  background: white;
+  input[type="radio"]
+  {
+    display: none;
+  }
+  .navv
+  {
+    position: fixed;
+    top: 70*@dw;
+    z-index: 1000;
+    background: white;
+    width: 100%;
+    height: 75*@dw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: #999999 0.05*@dw solid;
+    label
+    {
+      width: 20%;
+      height: 100%;
+      padding-top: 5*@dw;
+      div
+      {
+        width: 45*@dw;
+        height: 45*@dw;
+        border-radius: 50%;
+        background: @maincolor;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img1
+        {
+          width: 28*@dw;
+          height: 28*@dw;
+        }
+        .img2
+        {
+          width: 28*@dw;
+          height: 28*@dw;
+        }
+      }
+      p
+      {
+        width: 100%;
+        //height: 20*@dw;
+        line-height: 20*@dw;
+        font-size: 16*@dw;
+        text-align: center;
+        color: #333333;
+      }
+    }
+  }
+}
+.bbd
+{ width: 100%;
+  height: auto;
+  overflow: hidden;
+  .home
+  {
+    height: 100%;
+    width: 100%;
+  }
+}

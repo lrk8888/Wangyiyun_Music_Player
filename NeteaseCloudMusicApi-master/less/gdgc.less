@@ -1,0 +1,81 @@
+
+.titletj
+{
+  width: 100%;
+  height: 50*@dw;
+  margin-top: 60*@dw;
+  font-size: 30*@dw;
+  line-height: 50*@dw;
+  color: white;
+  padding-left: 20*@dw;
+  background: rgba(0,0,0,0.1);
+}
+.tuijiangedan
+{
+  width: 100%;
+  background: transparent;
+  .gd
+  {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    a {
+      width: 30%;
+      height: 10%;
+
+      li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: transparent;
+
+        div {
+          width: 100%;
+          height: 83%;
+          margin-top: 20*@dw;
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: center;
+          img {
+            width: 90%;
+            height: 90%;
+          }
+          p:nth-child(2) {
+            height: 25*@dw;
+            line-height: 18*@dw;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 15*@dw;
+            vertical-align: center;
+            color: white;
+            img
+            {
+              position: relative;
+              top: 2*@dw;
+              width: 18*@dw;
+              vertical-align: center;
+              height: 18*@dw;
+            }
+          }
+        }
+        p:nth-child(3) {
+          width: 100%;
+          height: 40*@dw;
+          font-size: 15*@dw;
+          line-height: 20*@dw;
+          color: #333333;
+          background: transparent;
+        }
+      }
+    }
+  }
+}

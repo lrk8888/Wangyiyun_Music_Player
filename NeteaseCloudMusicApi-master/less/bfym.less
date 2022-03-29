@@ -1,0 +1,298 @@
+//.bfymdj
+//{
+//  width: 100%;
+//  height:auto;
+//  position: relative;
+//  #bf1
+//  {
+//    width: 100%;
+//    height: 1000*@dw;
+//    background-color: rgba(0,0,0,0.2);
+//    -webkit-filter: blur(2px);
+//    -moz-filter: blur(2px);
+//    -ms-filter: blur(2px);
+//    -o-filter: blur(2px);
+//    filter: blur(50px);
+//    position: relative;
+//  }
+//  #bf2
+//  {
+//    width:425*@dw;
+//    height: 400*@dw;
+//    position:absolute;
+//    top: 70*@dw;
+//    left: 50%;
+//    transform: translateX(-50%);
+//  }
+//    #bf3
+//    {
+//     width: 210*@dw;
+//      height: 210*@dw;
+//      border-radius: 50%;
+//      position: absolute;
+//      top: 204*@dw;
+//      left: 49%;
+//      transform: translateX(-50%);
+//    }
+//}
+//#ymbfdj
+//{
+//  width: 100%;
+//  height: 300*@dw;
+//  overflow: scroll;
+//  position: absolute;
+//  color: white;
+//  bottom: -50*@dw;
+//  p
+//  {
+//    width: 100%;
+//    font-size: 18*@dw;
+//    line-height: 18*@dw;
+//  }
+//}
+//#ymddj
+//{
+//  width: 100%;
+//  height: 50*@dw;
+//  position: absolute;
+//  bottom: -50*@dw;
+//
+//  audio
+//  {
+//    width: 400*@dw;
+//    height: 150*@dw;
+//    position: relative;
+//    left: 50%;
+//    transform: translateX(-50%);
+//  }
+//}
+.audio {
+  width: 100%;
+    height:1200*@dw;
+  position: relative;
+
+ .progress {
+    position: absolute;
+    top: 60%;
+   left: 50%;
+   transform: translateX(-50%);
+    width: 75%;
+   -webkit-appearance: none;
+   margin-top:20*@dw;
+   background-color:rgba(0,0,0,0.1);
+   height: 4px;
+   padding: 0;
+   border: none;
+   line-height: 30px;
+  }
+.progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: default;
+  top: 0;
+  height: 12px;
+  width: 12px;
+  transform: translateY(0px);
+  background: #fff;
+  border-radius: 15px;
+  border: 5px solid #eff4f7;
+}
+
+  .time {
+    position: absolute;
+    top:61%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+   #c {
+      justify-content: space-between;
+      padding-left: 20*@dw;
+      font-weight: bold;
+      margin-right: 10*@dw;
+      font-size: 20*@dw;
+      color: white;
+    }
+    #p {
+      justify-content: space-between;
+      padding-left: 20*@dw;
+      font-weight: bold;
+      margin-right: 10*@dw;
+      font-size: 20*@dw;
+      color: white;
+    }
+  }
+
+  .setting {
+    position: relative;
+    #ha1
+    {
+      font-size: 30*@dw;
+      z-index: 2000000;position: absolute;
+      top:620*@dw;
+      left: 50%;
+      transform: translateX(-50%);
+      color:white;
+    }
+    #ha2
+    {
+      font-size: 30*@dw;
+      z-index: 2000000;position: absolute;
+      top:670*@dw;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+    }
+    #hah1
+    {
+      width: 40*@dw;
+      height: 40*@dw;
+      position: absolute;
+      top: 650*@dw;
+      left: 8%;
+      z-index: 3000000;
+    }
+    #hah2
+    {
+      width: 45*@dw;
+      height: 45*@dw;
+      position: absolute;
+      top: 650*@dw;
+      right: 8%;
+      z-index: 3000000;
+    }
+    #haha1
+    {
+      font-size: 70*@dw;
+      color: rgba(0,0,0,0.3);
+      position: absolute;
+      top: 29%;
+      left: 8%;
+      z-index: 10000;
+    }
+    #haha2 {
+      width: 100%;
+      height: 1200*@dw;
+      //height: 100%;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.1);
+      -webkit-filter: blur(50px);
+      -moz-filter: blur(50px);
+      -ms-filter: blur(50px);
+      -o-filter: blur(50px);
+      filter: blur(50px);
+    }
+    #haha3
+    {
+      font-size: 70*@dw;
+      color: rgba(0,0,0,0.3);
+      position: absolute;
+      top: 29%;
+      right: 8%;
+      z-index: 10000;
+    }
+
+  }
+
+  .run {
+    -webkit-animation: run 12s linear 0s infinite;
+    @-webkit-keyframes run {
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+  }
+
+  .bo-wen {
+    -webkit-animation: living 4s linear infinite;
+    @keyframes living {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      25% {
+        transform: scale(1.2);
+        opacity: 0.6; /*圆形放大的同时，透明度逐渐减小为0*/
+      }
+      50% {
+        transform: scale(1.3);
+        opacity: 0.3;
+      }
+      75% {
+        transform: scale(1.2);
+        opacity: 0.6;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+    }
+  }
+  .disc {
+    .disc-b {
+      img {
+        width: 330*@dw;
+        height: 330*@dw;
+        position: absolute;
+        top: 220*@dw;
+        left: 26%;
+        border-radius: 50%;
+        border: rgb(242, 192, 86) solid 10*@dw;
+      }
+    }
+
+    .kac {
+      width: 330*@dw;
+      height: 330*@dw;
+      position: absolute;
+      top: 220*@dw;
+      left: 26%;
+      border-radius: 50%;
+      background:rgba(0,0,0,0.5);
+    }
+  }
+
+  .Aud {
+    position: absolute;
+    top: 0;
+    audio::-webkit-media-controls {
+      overflow: hidden !important
+    }
+    audio::-webkit-media-controls-enclosure {
+      width: calc(0% + 0px);
+      margin-left: auto;
+    }
+  }
+
+  .song-words {
+    width: 100%;
+    height: 400*@dw;
+    margin: auto;
+    color: white;
+    overflow-y: scroll;
+    position: absolute;
+    top: 900*@dw;
+    left: 10%;
+    span
+    {
+      width: 100%;
+      display: block;
+      height:25*@dw;
+      font-size: 20*@dw;
+      line-height: 25*@dw;
+    }
+  }
+
+  .aa {
+    width: 60*@dw;
+    height: 60*@dw;
+    position: absolute;
+    color: rgba(0,0,0,0.5);
+    top: 30%;
+    left: 47%;
+    border-radius: 50%;
+    font-size: 60*@dw;
+  }
+}

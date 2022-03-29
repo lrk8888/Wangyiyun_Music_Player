@@ -1,0 +1,12 @@
+.guanggao_loop(@index2) when (@index2<=8)
+{
+  #b@{index2}:checked ~ .banning ul{
+    transition:1s;
+    transform: translateX((@index2 - 1 ) * (-12.5%));
+  }
+  #b@{index2}:checked ~ .label_list label:nth-child(@{index2}){
+    transition:1s;
+    background: white;
+  }
+  .guanggao_loop(@index2+1)
+}

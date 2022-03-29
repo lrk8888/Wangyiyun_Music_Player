@@ -1,0 +1,59 @@
+.guanggao {
+  width: 95%;
+  height: 300*@dw;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  border-radius: 15*@dw;
+  margin-top: 90*@dw;
+  margin-bottom: 15*@dw;
+  margin-left: 2.5%;
+  border: 1px solid #999999;
+  input[type="radio"]
+  {
+    display: none;
+  }
+  .label_list
+  {
+    width: 300*@dw;
+    position: absolute;
+    bottom:10*@dw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    text-align: center;
+    label
+    {
+      width: 12*@dw;
+      height: 12*@dw;
+      border: 1px solid white;
+      background: rgba(0,0,0,0.1);
+      display: inline-block;
+      border-radius: 50%;
+      margin-left: 5*@dw;
+    }
+  }
+  .banning
+  {
+    width: 100%;
+    height: 100%;
+    ul {
+      width: 800%;
+      height: 100%;
+      display: inline-block;
+      float: left;
+
+      li {
+        width: 12.5%;
+        height: 100%;
+        display: inline-block;
+        float: left;
+        img
+        {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
